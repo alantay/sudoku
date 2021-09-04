@@ -22,7 +22,7 @@ export default function Board() {
   };
 
   const solveHander = () => {
-    const solution = solve(boardState, []);
+    const solution = solve(boardState);
     if(checkFullBoard(solution)){
       setBoardState(solution);
     }else{
